@@ -4,8 +4,12 @@
 
 		<?php while ( have_posts() ) : the_post(); ?>
 	
-			<div class="poem-title"><?php the_title(); ?></div>
-			<?php the_content(); ?>
+			<div class="poem-title">
+				<?php the_title(); ?>
+			</div>
+			<div class="poem-content">
+				<?php the_content(); ?>
+			</div>
 	
 		<?php endwhile; // end of the loop. ?>
 
