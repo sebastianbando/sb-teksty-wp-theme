@@ -5,3 +5,61 @@ Description: From ground up
 Version: 0.7
 Tags: Typography, Modern Poetry, Atractive
 */
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+img.logo {
+	width:200px;
+}
+
+
+h1 {
+	font-family: 'Anton', 'Impact', sans-serif;
+}
+
+nav ul {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+    overflow: hidden;
+}
+nav li {
+	float:left;
+}
+nav li a {
+	display:block;
+	text-align:center;
+	padding:4px 6px;
+	text-decoration:none;
+	font-family: 'Anton', 'Impact', sans-serif;
+	font-size:20px;
+	color:black;
+}
+nav li a:hover {
+	background:yellow;
+}
+
+.spis-tresci a {
+	font-family: 'Roboto', "Arial", sans-serif;
+	text-decoration:none;
+}
+.spis-tresci a:link,
+.spis-tresci a:visited,
+.spis-tresci a:active {
+	color:black;
+}
+.spis-tresci a:hover {
+	color:magenta;
+}
+
+
+div.spis-tresci {
+	max-width:800px;
+	columns: 5;
+}
+div.spis-tresci-tytul {
+    text-indent: -15px;
+    padding-left: 15px;
+    margin-bottom:3px;
+}
