@@ -2,10 +2,8 @@
 <html>
 	<head>
 		<title><?php echo get_bloginfo(); ?></title>
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
 		<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/icon.png">
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/script.js"></script>
+		<?php wp_head(); ?>
 	</head>
 	<body>
 		<header>

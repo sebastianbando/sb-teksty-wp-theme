@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<main>
-		<div class="spis-tresci">
+		<div class="list">
 			<?php 
 				$args = array(
 					 "posts_per_page" => -1
@@ -12,7 +12,7 @@
 			?>
 			
 			<?php foreach($posts as $post) : ?>		
-				<div class="spis-tresci-tytul">
+				<div class="title">
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 				</div>
 			<?php endforeach; ?>
