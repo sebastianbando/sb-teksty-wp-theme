@@ -1,14 +1,16 @@
 $(document).ready(function() {
 	
-	// main container class name: "list"
-	
+	/*
+	 * Making initials and lateral grouping
+	 * for titles list.
+	 *
+	 */
+	 
+	//main container class name: "list"
 	function removeDuplicateCharacters(string) {
-		return string
-			.split('')
-			.filter(function(item, pos, self) {
-				return self.indexOf(item) == pos;
-			})
-			.join('');
+		return string.split('').filter(function(item, pos, self) {
+			return self.indexOf(item) == pos;
+		}).join('');
 	}
 			
 	var initialsList = "";
@@ -35,4 +37,9 @@ $(document).ready(function() {
   	$(".list").remove();
   	$(".list-new").toggleClass("list-new list");
   	
+  	
+
+  	// font awesome
+  	$("nav a:contains('Kontakt')").empty().append('<i class="fas fa-envelope"></i>');
+  	$("nav a:contains('Autor')").empty().append('<i class="fas fa-info-circle"></i>');
 });

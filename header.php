@@ -14,19 +14,23 @@
 			<div>
 				<h1><?php echo get_bloginfo(); ?></h1>
 				<nav>
-					<?php
-						$args = array(
-							'order' => 'ASC',
-							'orderby' => 'menu_order' );
-						$menuitems = wp_get_nav_menu_items( 'menu-glowne', $args );
-					?>
-					<ul>
-						<?php foreach ( $menuitems as $menuitem ) : ?>
-							<li>
-								<a href="<?php echo $menuitem->url ?>" title="<?php echo $menuitem->title ?>" class="main-menu"><?php echo $menuitem->title ?></a>
-							</li>
-						<?php endforeach ?>
-					</ul>
+					<div class="table">
+						<div class="table-cell">
+							<?php
+								$args = array(
+									'order' => 'ASC',
+									'orderby' => 'menu_order' );
+								$menuitems = wp_get_nav_menu_items( 'menu-glowne', $args );
+							?>
+							<ul>
+								<?php foreach ( $menuitems as $menuitem ) : ?>
+									<li>
+										<a href="<?php echo $menuitem->url ?>" title="<?php echo $menuitem->title ?>" class="main-menu"><?php echo $menuitem->title ?></a>
+									</li>
+								<?php endforeach ?>
+							</ul>
+						</div>
+					</div>
 				</nav>
 			</div>
 			</div>

@@ -6,24 +6,46 @@ Version: 0.7
 Tags: Typography, Modern Poetry, Atractive
 */
 
+
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 
-body {
-	font-family: 'Roboto', "Arial", sans-serif;
+html {
+	/*height: 100%;*/
 }
 
+body {
+	font-family: 'Roboto', "Arial", sans-serif;
+	/*position: relative;
+	min-height: 100%;*/
+}
+
+
+
+/* Header */
+
+header {
+	background:black;
+	color:white;
+	padding:0px 0px 0px 10px;
+	margin-bottom:30px;
+}
 img.logo {
-	width:200px;
-	
+	width:80px;
+	margin:2px 0px;
+	display:block;
 }
 h1 {
 	font-family: 'Anton', 'Impact', sans-serif;
 	margin:0px;
 	padding:0px 4px;
+	display:none;
 }
-
+nav {
+	width:100%;
+	height:100%;
+}
 nav ul {
 	list-style-type: none;
 	margin:0px;
@@ -40,16 +62,23 @@ nav li a {
 	text-decoration:none;
 	font-family: 'Anton', 'Impact', sans-serif;
 	font-size:20px;
-	color:black;
+	color:white;
 }
 nav li a:hover {
-	background:yellow;
+	color:yellow;
 }
 .header-grid {
 	display:grid;
 	grid-template-columns:200px auto;
 	grid-gap:10px;
-	margin-bottom:30px;
+}
+
+
+
+/* content */
+
+main {
+	/*margin-bottom:30px;*/
 }
 
 .list a {
@@ -64,7 +93,6 @@ nav li a:hover {
 .list a:hover {
 	color:magenta;
 }
-
 
 div.list {
 	max-width:800px;
@@ -89,8 +117,78 @@ div.title {
 }
 
 
+/* ------ */
 
 .poem-title {
 	font-family: 'Anton', 'Impact', sans-serif;
 	font-size:40px;
+}
+
+
+
+/* Footer */
+
+.vertical-space {
+	/*margin-top:30px;*/
+}
+footer {
+	background:#bbb;
+	padding:4px 7px;
+	/*position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;*/
+}
+footer a {
+	font-size:20px;
+	color:black;
+	font-decoration:none;
+	display:inline-block;
+	margin-right:5px;
+}
+footer a:hover {
+	color:;
+}
+
+
+
+
+/* Layout */
+
+header, main, aside, footer {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* For mobile phones: */
+[class*="grid"] {
+    width: 100%;
+}
+@media only screen and (min-width:600px) {
+	/* For fablets */
+  
+}
+@media only screen and (min-width:768px) {
+	/* For desktop */
+  
+	header, main, aside, footer {
+		max-width: 800px;
+	}
+  
+}
+
+
+
+/* Adds */
+
+.table {
+	display:table;
+	width:100%;
+	height:100%;
+}
+.table-cell {
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	height:100%;
 }
